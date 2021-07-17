@@ -25,6 +25,27 @@ body {
 }
 
 
+/* 유틸 */
+
+.layout {
+    width: 90%;
+    margin : 0 auto;
+}
+
+.site-wrap {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.site-wrap > main {
+    flex-grow: 1;
+}
+
+header, footer {
+    flex-shrink: 0;
+}
+
 header {
     display: flex;
     background-color: #284E78;
@@ -34,12 +55,50 @@ header {
 }
 
 .logo {
+    margin-left: 10px;
     padding: 10px 10px;
     font-weight: bold;
     font-size: 1.5rem;
 }
 
+.menu {
+    margin-right: 10px;
+}
+
 header > .menu > ul > li {
     display: inline-block;
     padding : 10px 10px;
+}
+
+main {
+    margin : 28px 0;
+    
+}
+
+main h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #111;
+}
+
+main table {
+    margin: 28px 0;
+    width: 100%;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+main th, td {
+    border : 1px solid #111;
+    padding : 10px
+}
+
+
+footer {
+    background-color: #284E78;
+    color : white;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
